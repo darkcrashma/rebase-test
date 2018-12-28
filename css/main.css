@@ -297,7 +297,11 @@ template {
     margin: 0;
     padding: 0;
 }
-.header-top__social-fbook,
+.header-top__social-fbook {
+    display: flex;
+    position: relative;
+    padding: 20px 15px 20px 0;
+}
 .header-top__social-twitter,
 .header-top__social-pin,
 .header-top__social-vk,
@@ -498,12 +502,12 @@ template {
     content: "";
     position: absolute;
     width: 10px;
-    height: 7px;
+    height: 11px;
     background: url("../img/header/header-top/down-arrow.svg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     top: 50%;
-    margin-top: -5.5px;
+    margin-top: -6.5px;
     right: 6%;
     margin-right: 8px;
     pointer-events: none;
@@ -515,8 +519,58 @@ template {
 }
 
 /*Оформление header-menu */
+.header-menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    z-index: 5;
+}
+.header-menu .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header-menu__nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header-menu__nav li {
+    list-style-type: none;
 
+}
+.header-menu__link {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    color: #ffffff;
+    padding: 26px 30px 26px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+}
+.header-menu__link::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url("../img/header/header-menu/down arrow.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -5px;
+    right: 0;
+    margin-right: 10px;
+
+}
+.header-menu__link:hover {
+    border-bottom: 4px solid #ff4081;
+}
 
 /*Оформление главного слайдера*/
 
@@ -579,4 +633,10 @@ template {
     left: 0;
     background-color: #212121;
     opacity: 0.87;
+}
+
+/*Наложение хедера на слайдер*/
+
+.header-wrapper {
+    position: relative;
 }
