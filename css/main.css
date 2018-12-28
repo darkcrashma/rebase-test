@@ -281,3 +281,20 @@ template {
     margin: 0 auto;
 }
 
+/* Оформляет хедер */
+.header-top {
+    background-color: #000000;
+}
+.header-top .grid {
+    display: flex;
+    justify-content: space-between;
+}
+.header-top__social-box {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header-top__social-link {
+    display: flex;
+    padding: 20px;
+}
