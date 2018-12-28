@@ -281,7 +281,7 @@ template {
     margin: 0 auto;
 }
 
-/* Оформляет хедер */
+/* Оформление хедер-топ */
 .header-top {
     background-color: #000000;
 }
@@ -289,12 +289,224 @@ template {
     display: flex;
     justify-content: space-between;
 }
+
+/*Оформление хедер-топ. Оформление социального блока*/
+
 .header-top__social-box {
     display: flex;
     margin: 0;
     padding: 0;
 }
-.header-top__social-link {
+.header-top__social-fbook,
+.header-top__social-twitter,
+.header-top__social-pin,
+.header-top__social-vk,
+.header-top__social-google,
+.header-top__social-behance,
+.header-top__social-dribble,
+.header-top__social-insta {
     display: flex;
-    padding: 20px;
+    position: relative;
+    padding: 20px 15px;
+}
+.header-top__social-behance {
+    padding-right: 20px;
+}
+
+.header-top__social-fbook::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    background: url("../img/header/header-top/facebook.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.header-top__social-twitter::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/header/header-top/twitter.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.header-top__social-pin::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    background: url("../img/header/header-top/pinterest-logo.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.header-top__social-vk::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    background: url("../img/header/header-top/vk.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.header-top__social-google::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/header/header-top/google-plus.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.header-top__social-behance::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/header/header-top/behance-logo.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.header-top__social-dribble::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/header/header-top/dribble-logo.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.header-top__social-insta::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/header/header-top/instagram-logo.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.header-top__social-fbook:hover,
+.header-top__social-twitter:hover,
+.header-top__social-pin:hover,
+.header-top__social-vk:hover,
+.header-top__social-google:hover,
+.header-top__social-behance:hover,
+.header-top__social-dribble:hover,
+.header-top__social-insta:hover {
+    background-color: #fff;
+}
+
+/*Оформление хедер-топ. Оформление блока аккаунта*/
+
+.header-top__account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-top__sign-in {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    padding:  6px 15px 7px 28px;
+
+}
+.header-top__sign-in::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url("../img/header/header-top/account.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.header-top__sign-in:hover {
+    color: #000;
+    background-color: #fff;
+}
+.header-top__language {
+    position: relative;
+}
+
+.header-top__language select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 26px 12px 28px;
+}
+
+.header-top__language::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/header/header-top/language.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -8px;
+    left: 9%;
+    pointer-events: none;
+}
+.header-top__language::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    background: url("../img/header/header-top/down-arrow.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -5.5px;
+    right: 6%;
+    margin-right: 8px;
+    pointer-events: none;
+}
+.header-top__language select:hover{
+    background-color: #fff;
+    color: #000000;
 }
