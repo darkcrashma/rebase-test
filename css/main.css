@@ -445,6 +445,7 @@ template {
     font-weight: 400;
     line-height: 27px;
     padding:  6px 15px 7px 28px;
+    cursor: pointer;
 
 }
 .header-top__sign-in::before {
@@ -477,6 +478,7 @@ template {
     color: #fff;
     font-size: 12px;
     padding: 12px 26px 12px 28px;
+    cursor: pointer;
 }
 
 .header-top__language::before {
@@ -505,8 +507,11 @@ template {
     right: 6%;
     margin-right: 8px;
     pointer-events: none;
+
 }
 .header-top__language select:hover{
     background-color: #fff;
     color: #000000;
 }
+
+/*Оформление header-menu */
