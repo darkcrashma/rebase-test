@@ -273,7 +273,12 @@ template {
 [hidden] {
     display: none;
 }
-
+/*Псевдораспорка для блоков с float*/
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 /* Сетка для контента */
 
 .grid {
@@ -281,3 +286,192 @@ template {
     margin: 0 auto;
 }
 
+/*Стили для основого блока видео*/
+.content{
+    width: 820px;
+    display: inline-block;
+}
+.section-video-main{
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+}
+.section-video-main__video-wrap{
+    position: relative;
+}
+.section-video-main__value{
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    box-sizing: border-box;
+}
+.section-video-main__content-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    line-height: 1.688;
+    float: left;
+}
+.section-video-main__statistics{
+    color: #ffffff;
+    float: right;
+}
+.section-video-main__comments{
+    display: inline-block;
+    margin-right: 15px;
+}
+.section-video-main__comments::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-video-main__likes{
+    display: inline-block;
+}
+.section-video-main__likes::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-video-main__title{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.611;
+    padding-left: 15px;
+}
+.section-video-main__description{
+    width: 760px;
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding:0 30px 0 15px;
+}
+
+.section-video-main__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-video-main__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-video-main__name{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-video-main__date{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-video-main__user{
+    width: 215px;
+}
+.section-video-main__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-list{
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    margin-top:20px;
+    height: 165px;
+}
+.section-media-list__content-wrap{
+    position: relative;
+    width: 260px;
+    display: inline-block;
+}
+.section-media-list__title{
+    width: 520px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.611;
+    padding-left: 15px;
+}
+.section-media-list__description{
+    width: 520px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding:0 15px 0 15px;
+}
+.section-media-list__info-wrap{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.section-media-list__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-media-list__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-media-list__name{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-media-list__date{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-media-list__user{
+    width: 215px;
+}
+.section-media-list__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
