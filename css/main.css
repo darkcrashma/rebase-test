@@ -607,6 +607,54 @@ template {
 .header-menu__link:hover {
     border-bottom: 4px solid #ff4081;
 }
+.header-menu__box {
+    display: flex;
+    flex-direction: row;
+}
+.header-menu__search,
+.header-menu__like,
+.header-menu__cart {
+    position: relative;
+    display: flex;
+    padding: 20px 25px;
+    border-right: 1px solid #fff;
+}
+.header-menu__search::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../img/header/header-menu/search.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(80%);
+}
+.header-menu__like::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../img/header/header-menu/like.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(80%);
+}
+.header-menu__cart::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../img/header/header-menu/shopping-cart.svg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(80%);
+}
 
 /*Оформление главного слайдера*/
 
