@@ -728,15 +728,15 @@ template {
     background-size: cover;
 }
 .section-media-big-cards__text-wrap{
-    height: 175px;
+    height: 160px;
     overflow: hidden;
 }
 .section-media-big-cards__title{
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
-    line-height: 1.714;
+    line-height: 1.611;
     padding: 20px 20px 0 20px;
     text-decoration: none;
     transition: 0.3s;
@@ -745,7 +745,7 @@ template {
     color: #3f51b5;
 }
 .section-media-big-cards__description{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "OpenSans", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.625;
@@ -798,4 +798,39 @@ template {
     width: 260px;
     height: 165px;
     overflow: hidden;
+}
+
+/*Стрелочка "more"*/
+.more-article__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.more-article{
+    width: 93px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.more-article__text{
+    color: #3f51b5;
+    margin-right: 8px;
+}
+.more-article__arrow-right{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-article__arrow-right::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/right_arrow_more.svg"), center, no-repeat;
+    background-size: cover;
 }
