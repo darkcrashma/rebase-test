@@ -274,7 +274,6 @@ template {
     display: none;
 }
 
-
 /*Подключаем необходимые шрифты*/
 @font-face {
     font-family: 'Montserrat';
@@ -300,12 +299,556 @@ template {
     font-style: normal;
 }
 
+/*Псевдораспорка для блоков с float*/
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* Сетка для контента */
 
 .grid {
     width: 1175px;
     margin: 0 auto;
+}
+/*Обёртка для всех блоков контента*/
+.blog-articles-wrap{
+    width: 820px;
+    display: inline-block;
+    background-color: inherit;
+}
+/*Стили для основого блока видео*/
+.section-video-main{
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+}
+.section-video-main__video-wrap{
+    position: relative;
+}
+.section-video-main__value{
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    box-sizing: border-box;
+}
+.section-video-main__content-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    line-height: 1.688;
+    float: left;
+}
+.section-video-main__statistics{
+    color: #ffffff;
+    float: right;
+}
+.section-video-main__comments{
+    display: inline-block;
+    margin-right: 15px;
+}
+.section-video-main__comments::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-video-main__likes{
+    display: inline-block;
+}
+.section-video-main__likes::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-video-main__title{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.611;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+.section-video-main__title:hover{
+    color: #3f51b5;
+}
+.section-video-main__description{
+    width: 760px;
+    font-size: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding:0 30px 0 15px;
+}
+
+.section-video-main__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-video-main__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-video-main__name a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-video-main__date{
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-video-main__user{
+    width: 215px;
+}
+.section-video-main__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+
+/*Стили для второго блока контента в виде списка блоков*/
+.section-media-list{
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    margin-top:20px;
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-media-list__content-wrap{
+    position: relative;
+    width: 260px;
+    display: inline-block;
+}
+.section-media-list__title{
+    width: 520px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.611;
+    padding-left: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-media-list__title:hover{
+    color: #3f51b5;
+}
+.section-media-list__description{
+    width: 520px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding:0 15px 0 15px;
+}
+.section-media-list__info-wrap{
+    display: flex;
+    flex-direction: column;
+
+}
+.section-media-list__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-media-list__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-media-list__name{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-media-list__date{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-media-list__user{
+    width: 215px;
+}
+.section-media-list__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+/*карточки статей*/
+.section-media-cards{
+    width: 260px;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.section-media-cards--wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section-media-cards__content-wrap{
+    width: 260px;
+    position: relative;
+}
+.section-media-cards__value{
+    padding: 0 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    box-sizing: border-box;
+}
+.section-media-cards__content-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat", Arial sans-serif;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    line-height: 1.688;
+    float: left;
+}
+.section-media-cards__statistics{
+    color: #ffffff;
+    float: right;
+}
+.section-media-cards__comments{
+    display: inline-block;
+    margin-right: 15px;
+}
+.section-media-cards__comments::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-cards__likes{
+    display: inline-block;
+}
+.section-media-cards__likes::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-cards__text-wrap{
+    height: 175px;
+    overflow: hidden;
+}
+.section-media-cards__title{
+    font-size: 14px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.714;
+    padding: 20px 20px 0 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-media-cards__title:hover{
+    color: #3f51b5;
+}
+.section-media-cards__description{
+    font-size: 14px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding: 0 20px 20px 20px;
+}
+.section-media-cards__info-wrap{
+
+}
+.section-media-cards__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-media-cards__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-media-cards__name{
+    font-size: 14px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-media-cards__date{
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-media-cards__user{
+    width: 200px;
+}
+.section-media-cards__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-cards__wrap-content-photo{
+    width: 260px;
+    height: 165px;
+    overflow: hidden;
+}
+/*стрелки для слайдера в карточках*/
+.section-media-cards__slider-arrow-wrap{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 59px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.section-media-cards__arrow-left{
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-media-cards__arrow-left::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/arrow-left.svg"), center, no-repeat;
+    background-size: cover;
+
+}
+.section-media-cards__arrow-right{
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-media-cards__arrow-right::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/arrow_right.svg"), center, no-repeat;
+    background-size: cover;
+}
+/*стили больших карточек*/
+.section-media-big-cards{
+    width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.section-media-big-cards--wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section-media-big-cards__content-wrap{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.section-media-big-cards__value{
+    padding: 0 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    box-sizing: border-box;
+}
+.section-media-big-cards__content-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat", Arial sans-serif;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    line-height: 1.688;
+    float: left;
+}
+.section-media-big-cards__statistics{
+    color: #ffffff;
+    float: right;
+}
+.section-media-big-cards__comments{
+    display: inline-block;
+    margin-right: 15px;
+}
+.section-media-big-cards__comments::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-big-cards__likes{
+    display: inline-block;
+}
+.section-media-big-cards__likes::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-big-cards__text-wrap{
+    height: 160px;
+    overflow: hidden;
+}
+.section-media-big-cards__title{
+    font-size: 18px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.611;
+    padding: 20px 20px 0 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-media-big-cards__title:hover{
+    color: #3f51b5;
+}
+.section-media-big-cards__description{
+    font-size: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding: 0 20px 20px 20px;
+}
+.section-media-big-cards__info-wrap{
+
+}
+.section-media-big-cards__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-media-big-cards__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-media-big-cards__name{
+    font-size: 14px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-media-big-cards__date{
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-media-big-cards__user{
+    width: 200px;
+}
+.section-media-big-cards__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-big-cards__wrap-content-photo{
+    width: 260px;
+    height: 165px;
+    overflow: hidden;
+}
+
+/*Стрелочка "more"*/
+.more-article__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margit-bottom: 40px;
+    background-color: inherit;
+}
+.more-article{
+    width: 93px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.more-article:hover{
+    background-color: #e0e0e0;
+    border: 2px solid #bbbbbb;
+    border-radius: 5px;
 }
 
 /* Оформление хедер-топ */
@@ -465,11 +1008,23 @@ template {
 
 /*Оформление хедер-топ. Оформление блока аккаунта*/
 
-.header-top__account {
+.header-top__account {}
+
+.more-article__text{
+    color: #3f51b5;
+    margin-right: 8px;
+}
+.more-article__arrow-right{
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dfdfdf;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .header-top__sign-in {
     position: relative;
     text-decoration: none;
@@ -853,4 +1408,12 @@ template {
     top: 50%;
     transform: translateY(-50%);
     left: 10%;
+}
+.more-article__arrow-right::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/right_arrow_more.svg"), center, no-repeat;
+    background-size: cover;
 }
