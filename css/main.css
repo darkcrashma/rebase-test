@@ -342,7 +342,7 @@ template {
     background: url("../img/content/icon/like.svg"), center, no-repeat;
     background-size: cover;
 }
-.section-video-main__title a{
+.section-video-main__title{
     text-decoration: none;
     font-size: 18px;
     font-family: "Montserrat", Arial, sans-serif;
@@ -350,6 +350,10 @@ template {
     font-weight: bold;
     line-height: 1.611;
     padding-left: 15px;
+    transition: 0.3s;
+}
+.section-video-main__title:hover{
+    color: #3f51b5;
 }
 .section-video-main__description{
     width: 760px;
@@ -426,6 +430,11 @@ template {
     font-weight: bold;
     line-height: 1.611;
     padding-left: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-media-list__title:hover{
+    color: #3f51b5;
 }
 .section-media-list__description{
     width: 520px;
@@ -541,16 +550,25 @@ template {
     background: url("../img/content/icon/like.svg"), center, no-repeat;
     background-size: cover;
 }
+.section-media-cards__text-wrap{
+    height: 175px;
+    overflow: hidden;
+}
 .section-media-cards__title{
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
     line-height: 1.714;
     padding: 20px 20px 0 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-media-cards__title:hover{
+    color: #3f51b5;
 }
 .section-media-cards__description{
-    font-size: 16px;
+    font-size: 14px;
     font-family: "OpenSans", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.625;
@@ -604,6 +622,7 @@ template {
     height: 165px;
     overflow: hidden;
 }
+/*стрелки для слайдера в карточках*/
 .section-media-cards__slider-arrow-wrap{
     display: flex;
     justify-content: space-between;
@@ -645,4 +664,138 @@ template {
     display: inline-block;
     background: url("../img/content/icon/arrow_right.svg"), center, no-repeat;
     background-size: cover;
+}
+/*стили больших карточек*/
+.section-media-big-cards{
+    width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.section-media-big-cards--wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section-media-big-cards__content-wrap{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.section-media-big-cards__value{
+    padding: 0 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    box-sizing: border-box;
+}
+.section-media-big-cards__content-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat", Arial sans-serif;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    line-height: 1.688;
+    float: left;
+}
+.section-media-big-cards__statistics{
+    color: #ffffff;
+    float: right;
+}
+.section-media-big-cards__comments{
+    display: inline-block;
+    margin-right: 15px;
+}
+.section-media-big-cards__comments::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-big-cards__likes{
+    display: inline-block;
+}
+.section-media-big-cards__likes::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-big-cards__text-wrap{
+    height: 175px;
+    overflow: hidden;
+}
+.section-media-big-cards__title{
+    font-size: 14px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: bold;
+    line-height: 1.714;
+    padding: 20px 20px 0 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-media-big-cards__title:hover{
+    color: #3f51b5;
+}
+.section-media-big-cards__description{
+    font-size: 14px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.625;
+    padding: 0 20px 20px 20px;
+}
+.section-media-big-cards__info-wrap{
+
+}
+.section-media-big-cards__user-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-media-big-cards__user-photo-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-media-big-cards__name{
+    font-size: 14px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.929;
+}
+.section-media-big-cards__date{
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgba(33, 33, 33, 0.541);
+    line-height: 2.25;
+    letter-spacing: 1px;
+}
+.section-media-big-cards__user{
+    width: 200px;
+}
+.section-media-big-cards__user-more::after{
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-big-cards__wrap-content-photo{
+    width: 260px;
+    height: 165px;
+    overflow: hidden;
 }
