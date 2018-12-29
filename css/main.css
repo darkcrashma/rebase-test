@@ -309,7 +309,7 @@ template {
 .section-video-main__content-name{
     text-transform: uppercase;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgb(255, 255, 255);
     font-variant: small-caps;
     line-height: 1.688;
@@ -345,7 +345,7 @@ template {
 .section-video-main__title a{
     text-decoration: none;
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
     line-height: 1.611;
@@ -354,7 +354,7 @@ template {
 .section-video-main__description{
     width: 760px;
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSans", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.625;
     padding:0 30px 0 15px;
@@ -377,13 +377,13 @@ template {
 .section-video-main__name a{
     text-decoration: none;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.929;
 }
 .section-video-main__date{
     font-size: 12px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(33, 33, 33, 0.541);
     line-height: 2.25;
     letter-spacing: 1px;
@@ -401,12 +401,16 @@ template {
     background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
     background-size: cover;
 }
+
+/*Стили для второго блока контента в виде списка блоков*/
 .section-media-list{
     background-color: #ffffff;
     border: 1px solid #ededed;
     border-radius: 5px;
     margin-top:20px;
     height: 165px;
+    display: flex;
+    justify-content: space-between;
 }
 .section-media-list__content-wrap{
     position: relative;
@@ -417,7 +421,7 @@ template {
     width: 520px;
     display: inline-block;
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
     line-height: 1.611;
@@ -435,7 +439,7 @@ template {
 .section-media-list__info-wrap{
     display: flex;
     flex-direction: column;
-    float: right;
+
 }
 .section-media-list__user-wrap{
     display: flex;
@@ -477,6 +481,7 @@ template {
     background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
     background-size: cover;
 }
+/*карточки статей*/
 .section-media-cards{
     width: 260px;
     background-color: #ffffff;
@@ -485,6 +490,7 @@ template {
     margin-top: 20px;
 }
 .section-media-cards--wrap{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -493,16 +499,16 @@ template {
     position: relative;
 }
 .section-media-cards__value{
-    padding: 15px;
+    padding: 0 15px;
     width: 100%;
     position: absolute;
-    bottom: 6px;
+    bottom: 10px;
     box-sizing: border-box;
 }
 .section-media-cards__content-name{
     text-transform: uppercase;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial sans-serif;
     color: rgb(255, 255, 255);
     font-variant: small-caps;
     line-height: 1.688;
@@ -537,7 +543,7 @@ template {
 }
 .section-media-cards__title{
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
     line-height: 1.714;
@@ -545,7 +551,7 @@ template {
 }
 .section-media-cards__description{
     font-size: 16px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSans", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.625;
     padding: 0 20px 20px 20px;
@@ -569,13 +575,13 @@ template {
 }
 .section-media-cards__name{
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.929;
 }
 .section-media-cards__date{
     font-size: 12px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgba(33, 33, 33, 0.541);
     line-height: 2.25;
     letter-spacing: 1px;
@@ -591,5 +597,52 @@ template {
     margin-top: 20px;
     margin-right: 15px;
     background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background-size: cover;
+}
+.section-media-cards__wrap-content-photo{
+    width: 260px;
+    height: 165px;
+    overflow: hidden;
+}
+.section-media-cards__slider-arrow-wrap{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 59px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.section-media-cards__arrow-left{
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-media-cards__arrow-left::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/arrow-left.svg"), center, no-repeat;
+    background-size: cover;
+
+}
+.section-media-cards__arrow-right{
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-media-cards__arrow-right::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/content/icon/arrow_right.svg"), center, no-repeat;
     background-size: cover;
 }
