@@ -1077,3 +1077,43 @@ template {
     color: #ffffff;
     background-color: #3f51b5;
 }
+/*карточки статей сайдбара*/
+.sidebar__tab-wrap{
+    display: flex;
+    border-bottom: 1px solid #dee5e9;
+    padding: 15px 0;
+}
+.sidebar__photo-wrap{
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+}
+.sidebar__info-tab{
+    margin-left: 15px;
+    position: relative;
+}
+.sidebar__date-tab{
+    font-size: 12px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: #909090;
+}
+.sidebar__comment-tab{
+    text-decoration: none;
+    color: #b9c5cd;
+    position: absolute;
+    right: 0;
+}
+.sidebar__comment-tab::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url("../img/sidebar/comment-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+.sidebar__description-tab{
+    font-size: 14px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: #212121;
+    font-weight: 700;
+}
