@@ -897,3 +897,183 @@ template {
     background: url("../img/content/icon/right_arrow_more.svg"), center, no-repeat;
     background-size: cover;
 }
+/*Стили сайдбара*/
+.sidebar-wrap{
+    width: 310px;
+}
+.sidebar{
+    width: 270px;
+    display: inline-block;
+    float: right;
+}
+/*Стили категорий в сайдбаре*/
+.sidebar__categories{
+    margin-bottom: 35px;
+}
+.sidebar__title-categories, .sidebar__title-subscribe, .sidebar__title-widget{
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3f51b5;
+    border-bottom: 1px solid #aec3ff;
+    line-height: 1.2;
+}
+.sidebar__list-categories{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.sidebar__list-element{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 2.857;
+    border-bottom: 1px solid #ebeae9;
+}
+.last-child{
+    border-bottom: none;
+}
+.sidebar__number-articles{
+    font-weight: 700;
+}
+/*Стили формы подписки*/
+.sidebar__subscribe{
+    margin-bottom: 48px;
+}
+.sidebar__label-name, .sidebar__label-email{
+    font-size: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 2.25;
+}
+.sidebar__input-name, .sidebar__input-email{
+    font-size: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.38);
+    line-height: 2.25;
+    padding-left: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.sidebar__submit-form{
+    font-size: 18px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #3f51b5;
+    margin-top: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.sidebar__or{
+    text-align: center;
+    font-size: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 2.25;
+}
+.sidebar__social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar__facebook-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url("../img/sidebar/facebook-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+.sidebar__twitter-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url("../img/sidebar/twitter-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+.sidebar__vk-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url("../img/sidebar/vk-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+.sidebar__pinterest-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url("../img/sidebar/pinterest-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+.sidebar__tumblr-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url("../img/sidebar/tumblr-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+.sidebar__dribbble-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url("../img/sidebar/dribbble-icon.svg"), center, no-repeat;
+    background-size: cover;
+}
+
+/*Стили виджета постов в сайдбаре*/
+.sidebar__switch-posts{
+    display: flex;
+    margin-top: 20px;
+}
+.sidebar__recent-post{
+    padding: 0;
+    width: 50%;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #3f51b5;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.875;
+    border: 1px solid #3f51b5;
+    border-radius: 5px 0 0 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sidebar__recent-post:focus{
+    color: #ffffff;
+    background-color: #3f51b5;
+}
+.sidebar__popular-post{
+    padding: 0;
+    width: 50%;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #3f51b5;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.875;
+    border: 1px solid #3f51b5;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sidebar__popular-post:focus{
+    color: #ffffff;
+    background-color: #3f51b5;
+}

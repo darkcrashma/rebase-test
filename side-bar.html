@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function valid(form) { //валидация на стороне клиента
+            stat_name.innerHTML = "";
+            stat_email.innerHTML = "";
+
+            var fail = false;
+            var name = form.name.value;
+            var email = form.email.value;
+
+            var name_reg = /[a-zа-я0-9 ]{3,30}$/i;
+            var email_reg = /.+@.+\.+./i;
+            if (name_reg.test(name) == false){
+                fail = true;
+                stat_name.innerHTML = "Имя должно быть не короче 3 букв и не содержать спецсимволов";
+            }else if (email_reg.test(email) == false){
+                fail = true;
+                stat_email.innerHTML = "Вы не ввели свою почту, либо ввели её не верно";
+            }
+
+            if(fail){
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<div class="container--sidebar-wrap">
+    <div class="sidebar-wrap clearfix">
+        <div class="sidebar">
+            <div class="sidebar__search">
+
+            </div>
+            <div class="sidebar__categories">
+                <div class="sidebar__title-categories">
+                    Categories
+                </div>
+                <ul class="sidebar__list-categories">
+                    <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Photography</span><span class="sidebar__number-articles">195</span></a></li>
+                    <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Illustration</span><span class="sidebar__number-articles">15</span></a></li>
+                    <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Graphic Design</span><span class="sidebar__number-articles">36</span></a></li>
+                    <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Web design</span><span class="sidebar__number-articles">220</span></a></li>
+                    <li><a class="sidebar__list-element last-child" href="#"><span class="sidebar__name-category">Videography</span><span class="sidebar__number-articles">17</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar__subscribe">
+                <div class="sidebar__title-subscribe">
+                    Subscribe
+                </div>
+                <form method="POST" action="handle.php" name="messageForm" id="form" onsubmit="return valid(this)">
+                    <label class="sidebar__label-name" for='name'>Name</label><br>
+                    <input class="sidebar__input-name" type="text" placeholder="Igor Ten" required name ="name" id="name"> <span id="stat_name" style="color:red; font-weight:bold"></span><br>
+                    <label class="sidebar__label-email" for='email'>Email</label><br>
+                    <input class="sidebar__input-email" type="email" placeholder="email@adress.com" required name="email" id="email"> <span id="stat_email" style="color:red; font-weight:bold"></span><br>
+                    <input class="sidebar__submit-form" type="submit" name="submitForm" value="subscribe">
+                </form>
+                <div class="sidebar__or">
+                    or
+                </div>
+                <div class="sidebar__social-icon">
+                    <a href="#" class="sidebar__facebook-icon">
+
+                    </a>
+                    <a href="#" class="sidebar__twitter-icon">
+
+                    </a>
+                    <a href="#" class="sidebar__vk-icon">
+
+                    </a>
+                    <a href="#" class="sidebar__pinterest-icon">
+
+                    </a>
+                    <a href="#" class="sidebar__tumblr-icon">
+
+                    </a>
+                    <a href="#" class="sidebar__dribbble-icon">
+
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar__widget">
+                <div class="sidebar__title-widget">
+                    Tab post widget
+                </div>
+                <div class="sidebar__switch-posts">
+                    <button class="sidebar__recent-post" autofocus>Recent post</button>
+                    <button class="sidebar__popular-post">Popular post</button>
+                </div>
+                <div class="sidebar__tab-wrap">
+                    <div class="sidebar__photo-wrap">
+                        <a><img class="sidebar__photo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
