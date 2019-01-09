@@ -1420,3 +1420,61 @@ template {
     background: url("../img/content/icon/right_arrow_more.svg"), center, no-repeat;
     background-size: cover;
 }
+
+/*оформляем блок с фотографиями*/
+.footer-photos {
+    display: flex;
+    width: 100%;
+}
+.footer-photos__item {
+    width: 12.5%;
+    display: flex;
+}
+.footer-photos__item img {
+    width: 100%;
+}
+/*оформляем блок с подпиской*/
+.footer-subscribe {
+    padding-top: 77px;
+    padding-bottom: 87px;
+    background: url("../img/footer/subscribe/background.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer-subscribe .grid {
+    display: flex;
+    align-items: center;
+}
+.footer-subscribe__label {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-right: 68px;
+}
+.footer-subscribe__email {
+    background: transparent;
+    border-radius: 30px;
+    border: 0.5px solid #ffffff;
+    color: #ffffff;
+    width: 221px;
+    padding: 12px 23px 14px 23px;
+    opacity: 0.38;
+    margin-right: 30px;
+}
+.footer-subscribe__button {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0.5px solid #303f9f;
+    padding: 11px 20px 13px 20px;
+    box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+    background-color: #303f9f;
+}
+
+/*оформляем блок с виджетами*/
