@@ -1484,16 +1484,20 @@ template {
     color: #fff;
     padding-bottom: 50px;
 }
+.footer-widgets .grid {
+    display: flex;
+}
+
 .footer-widgets__title {
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .footer-widgets__pages {
-    width: 25%;
+    width: 23%;
 }
 .footer-widgets__pages-box {
     box-sizing: border-box;
@@ -1511,7 +1515,7 @@ template {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    padding: 17px 0 16px 16px;
+    padding: 4px 0 3px 15px;
     transition: background-color 0.4s;
 }
 .footer-widgets__pages-title.active,
@@ -1564,4 +1568,116 @@ template {
 }
 .footer-widgets__pages-link:hover {
     background-color: #303030;
+}
+
+
+/*оформляем виджет твиттера*/
+.footer-widgets__wrapper {
+    width: 25%;
+    margin-left: 30px;
+}
+.footer-widgets__twitter-item {
+    padding-bottom: 10px;
+    border-bottom: 0.1px solid #fff;
+    margin-bottom: 10px;
+}
+.footer-widgets__twitter-author {
+    position: relative;
+    padding-left: 50px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+.footer-widgets__twitter-author::before {
+    position: absolute;
+    content: '';
+    background: url("../img/footer/widgets/twitter-logo.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 22px;
+    height: 18px;
+    top: 2%;
+    left: 0;
+    transform: translateX(44%);
+}
+.footer-widgets__twitter-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-widgets__twitter-time {
+    position: relative;
+    color: #ffffff;
+    opacity: 0.7;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+.footer-widgets__twitter-time::after {
+    position: absolute;
+    content: "";
+    background: url("../img/footer/widgets/next.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 14px;
+    height: 6px;
+    top: 50%;
+    margin-top: -3px;
+    right: 0;
+    transform: translateX(130%);
+}
+.footer-widgets__twitter-box a {
+    opacity: 0.7;
+    margin-right: 5px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.footer-widgets__social-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-widgets__social-facebook {
+    padding: 18px;
+    background: url("../img/footer/widgets/social/facebook.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer-widgets__social-vk {
+    padding: 18px;
+    background: url("../img/footer/widgets/social/vk.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer-widgets__social-twitter {
+    padding: 18px;
+    background: url("../img/footer/widgets/social/twitter.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer-widgets__social-pin {
+    padding: 18px;
+    background: url("../img/footer/widgets/social/pinterest.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer-widgets__social-tumbler {
+    padding: 18px;
+    background: url("../img/footer/widgets/social/tumblr.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.footer-widgets__social-dribble {
+    padding: 18px;
+
+    background: url("../img/footer/widgets/social/dribble-logo-button.svg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
