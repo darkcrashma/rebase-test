@@ -15,9 +15,6 @@ function accordeonFooter () {
     $list.on('click', function (e) {
         e.preventDefault();
         var $this = $(this).next(".footer-widgets__pages-content");
-        // if (!$this) {
-        //     $cont.slideUp();
-        // }
         if(!$.contains($list.get(0), e.target)) {
             $cont.slideUp();
         }
