@@ -1008,7 +1008,10 @@ template {
 
 /*Оформление хедер-топ. Оформление блока аккаунта*/
 
-.header-top__account {}
+.header-top__account {
+    display: flex;
+    flex-direction: row;
+}
 
 .more-article__text{
     color: #3f51b5;
