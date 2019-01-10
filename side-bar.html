@@ -7,39 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
-    <script type="text/javascript">
-        function valid(form) { //валидация на стороне клиента
-            stat_name.innerHTML = "";
-            stat_email.innerHTML = "";
-
-            var fail = false;
-            var name = form.name.value;
-            var email = form.email.value;
-
-            var name_reg = /[a-zа-я0-9 ]{3,30}$/i;
-            var email_reg = /.+@.+\.+./i;
-            if (name_reg.test(name) == false){
-                fail = true;
-                stat_name.innerHTML = "Имя должно быть не короче 3 букв и не содержать спецсимволов";
-            }else if (email_reg.test(email) == false){
-                fail = true;
-                stat_email.innerHTML = "Вы не ввели свою почту, либо ввели её не верно";
-            }
-
-            if(fail){
-                return false;
-            }else{
-                return true;
-            }
-        }
-
-    </script>
 </head>
 <div class="container--sidebar-wrap">
     <div class="sidebar-wrap clearfix">
         <div class="sidebar">
-            <div class="sidebar__search">
-
+            <div class="search-wrap">
+                <input type="text" class="sidebar__search" placeholder="Search">
             </div>
             <div class="sidebar__categories">
                 <div class="sidebar__title-categories">
@@ -103,7 +76,7 @@
                     <div class="sidebar__info-tab">
                         <span class="sidebar__date-tab">April 28, 2016</span>
                         <a href="#" class="sidebar__comment-tab">17</a><br>
-                        <span class="sidebar__description-tab">Duis commodo elit sed nisi molestie</span>
+                        <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
                     </div>
                 </div>
                 <div class="sidebar__tab-wrap">
@@ -113,7 +86,7 @@
                     <div class="sidebar__info-tab">
                         <span class="sidebar__date-tab">April 28, 2016</span>
                         <a href="#" class="sidebar__comment-tab">17</a><br>
-                        <span class="sidebar__description-tab">Duis commodo elit sed nisi molestie</span>
+                        <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
                     </div>
                 </div>
                 <div class="sidebar__tab-wrap">
@@ -123,7 +96,7 @@
                     <div class="sidebar__info-tab">
                         <span class="sidebar__date-tab">April 28, 2016</span>
                         <a href="#" class="sidebar__comment-tab">17</a><br>
-                        <span class="sidebar__description-tab">Duis commodo elit sed nisi molestie</span>
+                        <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
                     </div>
                 </div>
                 <div class="sidebar__tab-wrap">
@@ -133,10 +106,37 @@
                     <div class="sidebar__info-tab">
                         <span class="sidebar__date-tab">April 28, 2016</span>
                         <a href="#" class="sidebar__comment-tab">17</a><br>
-                        <span class="sidebar__description-tab">Duis commodo elit sed nisi molestie</span>
+                        <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
                     </div>
                 </div>
+            </div>
+            <div class="sidebar__tags">
+                <div href="#" class="sidebar__title-tags">
+                    Tags
+                </div>
+                <a href="#" class="sidebar__tags-item">
+                    Photography
+                </a>
+                <a href="#" class="sidebar__tags-item">
+                    Webdesign
+                </a>
+                <a href="#" class="sidebar__tags-item">
+                    Youtube
+                </a>
+                <a href="#" class="sidebar__tags-item">
+                    Envato
+                </a>
+                <a href="#" class="sidebar__tags-item">
+                    Art
+                </a>
+                <a href="#" class="sidebar__tags-item">
+                    Themefotest
+                </a>
+                <a href="#" class="sidebar__tags-item">
+                    Illustration
+                </a>
             </div>
         </div>
     </div>
 </div>
+<script src="js/main.js"></script>
