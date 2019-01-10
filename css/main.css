@@ -973,6 +973,7 @@ template {
     height: 35px;
     background: url("../img/sidebar/search-icon.svg"), center, no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 /*Стили категорий в сайдбаре*/
