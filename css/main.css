@@ -1062,7 +1062,7 @@ template {
     position: relative;
 }
 
-.header-top__language select {
+.language-box select {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: none;
@@ -1077,7 +1077,7 @@ template {
     transition: background-color 0.5s;
 }
 
-.header-top__language::before {
+.language-box::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -1090,7 +1090,7 @@ template {
     left: 9%;
     pointer-events: none;
 }
-.header-top__language::after {
+.language-box::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -1105,7 +1105,7 @@ template {
     pointer-events: none;
 
 }
-.header-top__language select:hover{
+.language-box select:hover{
     background-color: #fff;
     color: #000000;
 }
@@ -1317,6 +1317,9 @@ template {
     letter-spacing: 0;
 }
 .header-content__btn {
+    margin-bottom: 80px;
+}
+.simple-btn {
     padding: 5px 27px 3px 28px;
     -webkit-border-radius: 21px;
     -moz-border-radius: 21px;
@@ -1331,9 +1334,9 @@ template {
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.4s ease;
-    margin-bottom: 80px;
 }
-.header-content__btn:hover {
+
+.simple-btn:hover {
     background-color: #041373;
 }
 .header-content__author {
@@ -1803,4 +1806,7 @@ template {
 }
 .footer-bottom__link {
     font-size: 12px;
+}
+.footer-bottom__language {
+    position: relative;
 }
