@@ -22,9 +22,11 @@
     </div>
     <div class="footer-subscribe">
         <div class="grid">
-            <label for="email" class="footer-subscribe__label">Subscribe to our newsletter</label>
-            <input type="email" id="email" class="footer-subscribe__email" placeholder="Email Address">
-            <input type="submit" value="Subscribe" class="footer-subscribe__button">
+            <form action="#">
+                <label for="email" class="footer-subscribe__label">Subscribe to our newsletter</label>
+                <input type="email" id="email" class="footer-subscribe__email" placeholder="Email Address">
+                <input type="submit" value="Subscribe" class="footer-subscribe__button">
+            </form>
         </div>
     </div>
     <div class="footer-widgets">
@@ -144,16 +146,48 @@
             <!-- /.footer-widgets__flickr -->
             <div class="footer-widgets__letter">
                 <div class="footer-widgets__title">News letter</div>
-                <input class="footer-widgets__letter-name" type="Text" placeholder="Name">
-                <input class="footer-widgets__letter-address"  type="email" placeholder="Email Address">
-                <textarea class="footer-widgets__letter-text" rows="10" placeholder="Message"    ></textarea>
-                <input class="footer-widgets__letter-btn"  type="submit" value="Subscribe">
+                <form action="#">
+                    <input class="footer-widgets__letter-name" type="Text" placeholder="Name">
+                    <input class="footer-widgets__letter-address"  type="email" placeholder="Email Address">
+                    <textarea class="footer-widgets__letter-text" rows="10" placeholder="Message"    ></textarea>
+                    <input class="footer-widgets__letter-btn"  type="submit" value="Subscribe">
+                </form>
             </div>
             <!-- /.footer-widgets__letter -->
         </div>
+        <div class="footer-bottom">
+            <div class="grid">
+                <div class="footer-bottom-wrapper">
+                    <nav>
+                        <ul class="header-menu__nav">
+                            <li><a class="header-menu__link" href="#">Home</a></li>
+                            <li><a class="header-menu__link" href="#">Portfolio</a></li>
+                            <li><a class="header-menu__link" href="#">Blog</a></li>
+                            <li><a class="header-menu__link" href="#">Pages</a></li>
+                            <li><a class="header-menu__link" href="#">Shop</a></li>
+                            <li><a class="header-menu__link" href="#">Components</a></li>
+                            <li><a class="header-menu__link" href="#">Features</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-bottom__form">
+                        <form  action="#">
+                            <input class="footer-bottom__search" type="search" placeholder="Search">
+                        </form>
+                    </div>
+                                     <div class="header-top__language footer-bottom__language">
+                        <select name="language">
+                            <option value="1">ENG</option>
+                            <option value="1">RUS</option>
+                         </select>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.footer-bottom -->
     </div>
 </footer>
-
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>

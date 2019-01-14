@@ -1482,7 +1482,7 @@ template {
     padding-top: 50px;
     background-color: #212121;
     color: #fff;
-    padding-bottom: 50px;
+
 }
 .footer-widgets .grid {
     display: flex;
@@ -1759,4 +1759,46 @@ template {
     line-height: 30px;
     text-transform: uppercase;
     cursor: pointer;
+}
+.footer-bottom {
+    margin-top: 77px;
+    background-color: #303030;
+}
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer-bottom__language select {
+    background-color: transparent;
+}
+.footer-bottom__search {
+    width: 220px;
+    opacity: 0.5;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 10px 30px 10px 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.footer-bottom__form {
+    position: relative;
+}
+.footer-bottom__form::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url("../img/footer/bottom/search.svg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    right: 0;
+    margin-top: -7px;
+    margin-right: 14px;
+    opacity: 0.5;
+
 }
