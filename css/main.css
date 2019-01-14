@@ -1800,5 +1800,7 @@ template {
     margin-top: -7px;
     margin-right: 14px;
     opacity: 0.5;
-
+}
+.footer-bottom__link {
+    font-size: 12px;
 }
