@@ -317,6 +317,7 @@ template {
 .categories-blog-wrap{
     background-color: #ffffff;
     border-bottom: 1px solid #dddddd;
+    padding: 15px 0;
 }
 .categories-blog{
     text-transform: uppercase;
@@ -324,7 +325,6 @@ template {
     font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     display: flex;
-    margin: 15px 0;
     width: 800px;
 }
 .categories-blog__title{
@@ -347,10 +347,15 @@ template {
     color: #3f51b5;
 }
 /*Обёртка для всех блоков контента*/
+.content-wrap{
+    background-color: #f5f5f5;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
 .blog-articles-wrap{
     width: 820px;
-    display: inline-block;
-    background-color: inherit;
     margin-top: 30px;
 }
 /*Стили для основого блока видео*/
@@ -510,7 +515,7 @@ template {
 .section-media-list__title{
     width: 520px;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
@@ -1925,12 +1930,15 @@ template {
     position: relative;
 }
 /*Стили сайдбара*/
+.container--sidebar-wrap{
+    background-color: #ffffff;
+    margin-top: 30px;
+}
 .sidebar-wrap{
     width: 310px;
 }
 .sidebar{
     width: 270px;
-    display: inline-block;
     float: right;
 }
 /*Стили поиска в сайдбаре*/

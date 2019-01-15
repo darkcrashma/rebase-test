@@ -5,23 +5,844 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 
 
 <body>
-<header class="header"></header>
+<header class="header">
+    <div class="header-top">
+        <div class="grid">
+            <ul class="header-top__social-box">
+                <li><a class="header-top__social-fbook"  href="#"></a></li>
+                <li><a class="header-top__social-twitter"  href="#"></a></li>
+                <li><a class="header-top__social-pin"  href="#"></a></li>
+                <li><a class="header-top__social-vk"  href="#"></a></li>
+                <li><a class="header-top__social-google"  href="#"></a></li>
+                <li><a class="header-top__social-behance"  href="#"></a></li>
+                <li><a class="header-top__social-dribble"  href="#"></a></li>
+                <li><a class="header-top__social-insta"  href="#"></a></li>
+            </ul>
+            <!-- /.header-top__social -->
+            <div class="header-top__account">
+                <a href="" class="header-top__sign-in">SIGN IN</a>
+                <div class="header-top__language language-box ">
+                    <select name="language">
+                        <option value="1">ENG</option>
+                        <option value="1">RUS</option>
+                    </select>
+                </div>
+                <!-- /.header-top__language -->
+            </div>
+            <!-- /.header-top__account -->
+        </div>
+        <!-- /.grid -->
+    </div>
+    <!-- /.header-top -->
+    <div class="header-wrapper">
+        <div class="header-menu">
+            <div class="grid">
+                <a href="#" class="header-menu__logo">
+                    <img src="img/header/header-menu/logo.png" alt="logo">
+                </a>
+                <!-- /.header-menu__logo -->
+                <nav>
+                    <ul class="header-menu__nav">
+                        <li><a class="header-menu__link" href="#">Home</a></li>
+                        <li><a class="header-menu__link" href="#">Portfolio</a></li>
+                        <li><a class="header-menu__link" href="#">Blog</a></li>
+                        <li><a class="header-menu__link" href="#">Pages</a></li>
+                        <li><a class="header-menu__link" href="#">Shop</a></li>
+                        <li><a class="header-menu__link" href="#">Components</a></li>
+                        <li><a class="header-menu__link" href="#">Features</a></li>
+                    </ul>
+                </nav>
+                <div class="header-menu__box">
+                    <a class="header-menu__search" href="#"></a>
+                    <a class="header-menu__like" href="#"></a>
+                    <a class="header-menu__cart" href="#"></a>
+                </div>
+                <!-- /.header-menu__box -->
+            </div>
+            <!-- /.grid -->
+        </div>
+        <!-- /.header-menu -->
+        <div class="header-slider">
+            <div class="header-slider__item"><img src="img/header/header-slider/Item.jpg" alt="item">
+                <div class="header-content">
+                    <div class="header-content__categories">inspiration</div>
+                    <div class="header-content__title">5 Ways milllennials can start building their future today</div>
+                    <a href="#" class="header-content__btn simple-btn">Read More</a>
+                    <div class="header-content__author">
+                        <div class="header-content__photo"><img src="img/header/header-content/Photo.png" alt="photo"></div>
+                        <a href="#" class="header-content__name">Henry Little</a>
+                        <div class="header-content__date">April 28, 2018 | 22:08</div>
+                        <div class="header-content__box"><a href="#" class="header-content__comments">Comments (<span>20</span>)</a>
+                            <a href="#" class="header-content__likes">Likes (<span>6</span>)</a></div>
+                    </div>
+                </div>
+                <!-- /.header-content -->
+            </div>
+            <div class="header-slider__item"><img src="img/header/header-slider/Item.jpg" alt="item">
+                <div class="header-content">
+                    <div class="header-content__categories">inspiration</div>
+                    <div class="header-content__title">5 Ways milllennials can start building their future today</div>
+                    <a href="#" class="header-content__btn simple-btn">Read More</a>
+                    <div class="header-content__author">
+                        <div class="header-content__photo"><img src="img/header/header-content/Photo.jpg" alt="photo"></div>
+                        <a href="#" class="header-content__name">Henry Little</a>
+                        <div class="header-content__date">April 28, 2018 | 22:08</div>
+                        <a href="#" class="header-content__comments">Comments (<span>20</span>)</a>
+                        <a href="#" class="header-content__likes">Likes (<span>6</span>)</a>
+                    </div>
+                </div>
+                <!-- /.header-content -->
+            </div>
+            <div class="header-slider__item"><img src="img/header/header-slider/Item.jpg" alt="item">
+                <div class="header-content">
+                    <div class="header-content__categories">inspiration</div>
+                    <div class="header-content__title">5 Ways milllennials can start building their future today</div>
+                    <a href="#" class="header-content__btn simple-btn">Read More</a>
+                    <div class="header-content__author">
+                        <div class="header-content__photo"><img src="img/header/header-content/Photo.jpg" alt="photo"></div>
+                        <a href="#" class="header-content__name">Henry Little</a>
+                        <div class="header-content__date">April 28, 2018 | 22:08</div>
+                        <a href="#" class="header-content__comments">Comments (<span>20</span>)</a>
+                        <a href="#" class="header-content__likes">Likes (<span>6</span>)</a>
+                    </div>
+                </div>
+                <!-- /.header-content -->
+            </div>
+        </div>
+        <!-- /.header-slider -->
+    </div>
+    <!-- /.header-wrapper -->
+</header>
 <!-- /.header -->
+    <div class="categories-blog-wrap">
+        <div class="grid">
+            <nav class="categories-blog">
+                <div class="categories-blog__title">
+                    Sort blog:
+                </div>
+                <a href="#" class="categories_blog__element">
+                    All
+                </a>
+                <a href="#" class="categories_blog__element">
+                    Photography
+                </a>
+                <a href="#" class="categories_blog__element">
+                    Lifestyle
+                </a>
+                <a href="#" class="categories_blog__element">
+                    Trip
+                </a>
+                <a href="#" class="categories_blog__element">
+                    Inspiration
+                </a>
+            </nav>
+        </div>
+    </div>
 
-<main class="content"></main>
+<div class="content-wrap">
+<main class="content grid">
+    <div class="blog-articles-wrap">
+        <div class="section-video-main">
+            <div class="section-video-main__video-wrap">
+                <video width="820" height="420" poster="img/content/screen_video_main.png">
+                    <source src="https://player.vimeo.com/video/164438721">
+                </video>
+                <div class="section-video-main__value clearfix">
+                    <a href="#" class="section-video-main__content-name">
+                        Lifestyle
+                    </a>
+                    <div class="section-video-main__statistics">
+                        <a href="#" class="section-video-main__comments">
+                            7
+                        </a>
+                        <a href="#" class="section-video-main__likes">
+                            15
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="section-video-main__title">10 Things To Do To Change Your Life Forever</a>
+            <div class="section-video-main__description">
+                The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.
+            </div>
+            <hr color="#e0e0e0" style="margin: 0">
+            <div class="section-video-main__user-wrap">
+                <div class="section-video-main__user">
+                    <div class="section-video-main__user-photo-wrap">
+                        <a href="#"><img class="section-video-main__photo" src="img/content/user_photo_henry.png" alt="user_photo_henry"></a>
+                    </div>
+                    <a href="" class="section-video-main__name">Henry Little</a><br>
+                    <span class="section-video-main__date">April 28, 2016   10:15</span>
+                </div>
+                <a class="section-video-main__user-more" href="#"></a>
+            </div>
+        </div>
+        <div class="section-media-list clearfix">
+            <div class="section-media-list__content-wrap">
+                <video width="260" height="165" poster="img/content/screen_video_little_1.png">
+                    <source src="https://player.vimeo.com/video/164438721">
+                </video>
+                <div class="section-video-main__value clearfix">
+                    <a href="#" class="section-video-main__content-name">
+                        Inspiration
+                    </a>
+                    <div class="section-video-main__statistics">
+                        <a href="#" class="section-video-main__comments">
+                            7
+                        </a>
+                        <a href="#" class="section-video-main__likes">
+                            15
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-media-list__info-wrap">
+                <a href="#" class="section-media-list__title">
+                    4 Natural Ways To Have Young Skin
+                </a>
+                <div class="section-media-list__description">
+                    Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.
+                </div>
+                <hr color="#e0e0e0" style="margin: 0">
+                <div class="section-media-list__user-wrap">
+                    <div class="section-media-list__user">
+                        <div class="section-media-list__user-photo-wrap">
+                            <a href="#"><img class="section-media-list__photo" src="img/content/user_photo_james.png" alt="user_photo_james"></a>
+                        </div>
+                        <a href="" class="section-media-list__name">James Leman</a><br>
+                        <span class="section-media-list__date">April 28, 2016</span>
+                    </div>
+                    <a class="section-media-list__user-more" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section-media-list clearfix">
+            <div class="section-media-list__content-wrap">
+                <img class="section-media-list__content-photo" width="260" height="165" src="img/content/content-photo-scate.png">
+                <div class="section-video-main__value clearfix">
+                    <a href="#" class="section-video-main__content-name">
+                        Inspiration
+                    </a>
+                    <div class="section-video-main__statistics">
+                        <a href="#" class="section-video-main__comments">
+                            7
+                        </a>
+                        <a href="#" class="section-video-main__likes">
+                            15
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-media-list__info-wrap">
+                <a href="#" class="section-media-list__title">
+                    Six Hobbies That Can Help You Beat Stress
+                </a>
+                <div class="section-media-list__description">
+                    Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.
+                </div>
+                <hr color="#e0e0e0" style="margin: 0">
+                <div class="section-media-list__user-wrap">
+                    <div class="section-media-list__user">
+                        <div class="section-media-list__user-photo-wrap">
+                            <a href="#"><img class="section-video-main__photo" src="img/content/user_photo_ben.png" alt="user_photo_ben"></a>
+                        </div>
+                        <a href="#" class="section-media-list__name">Henry Little</a><br>
+                        <span class="section-media-list__date">April 28, 2016</span>
+                    </div>
+                    <a class="section-media-list__user-more" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section-media-list clearfix">
+            <div class="section-media-list__content-wrap">
+                <img class="section-media-list__content-photo" width="260" height="165" src="img/content/content-photo-water.png">
+                <div class="section-video-main__value clearfix">
+                    <a href="#" class="section-video-main__content-name">
+                        Inspiration
+                    </a>
+                    <div class="section-video-main__statistics">
+                        <a href="#" class="section-video-main__comments">
+                            7
+                        </a>
+                        <a href="#" class="section-video-main__likes">
+                            15
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-media-list__info-wrap">
+                <a href="#" class="section-media-list__title">
+                    10 Singals From Your Body Telling You Should Sleep More
+                </a>
+                <div class="section-media-list__description">
+                    Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.
+                </div>
+                <hr color="#e0e0e0" style="margin: 0">
+                <div class="section-media-list__user-wrap">
+                    <div class="section-media-list__user">
+                        <div class="section-media-list__user-photo-wrap">
+                            <a href="#"><img class="section-video-main__photo" src="img/content/user_photo_henry.png" alt="user_photo_henry"></a>
+                        </div>
+                        <a href="#" class="section-media-list__name">Henry Little</a><br>
+                        <span class="section-media-list__date">April 28, 2016</span>
+                    </div>
+                    <a class="section-media-list__user-more" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section-media-cards--wrap">
+            <div class="section-media-cards">
+                <div class="section-media-cards__content-wrap">
+                    <video width="260" height="165" poster="img/content/food_photo.png">
+                        <source src="https://player.vimeo.com/video/164438721">
+                    </video>
+                    <div class="section-media-cards__value">
+                        <a href="#" class="section-media-cards__content-name">
+                            Inspiration
+                        </a>
+                        <div class="section-media-cards__statistics">
+                            <a href="#" class="section-media-cards__comments">
+                                7
+                            </a>
+                            <a href="#" class="section-media-cards__likes">
+                                15
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-media-cards__info-wrap">
+                    <div class="section-media-cards__text-wrap">
+                        <a href="#" class="section-media-cards__title">
+                            Food That Actually Taste
+                            Better When You Freeze
+                        </a>
+                        <div class="section-media-cards__description">
+                            Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris.
+                        </div>
+                    </div>
+                    <hr color="#e0e0e0" style="margin: 0">
+                    <div class="section-media-cards__user-wrap">
+                        <div class="section-media-cards__user">
+                            <div class="section-media-cards__user-photo-wrap">
+                                <a href="#"><img class="section-media-cards__photo" src="img/content/user_photo_james.png" alt="user_photo_james"></a>
+                            </div>
+                            <a href="#" class="section-media-cards__name">James Leman</a><br>
+                            <span class="section-media-cards__date">April 28, 2016</span>
+                        </div>
+                        <a class="section-media-cards__user-more" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-media-cards">
+                <div class="section-media-cards__content-wrap">
+                    <div class="section-media-cards__wrap-content">
+                        <img class="section-media-cards__content-photo" src="img/content/love_traveling.png">
+                    </div>
+                    <div class="section-media-cards__value">
+                        <a href="#" class="section-media-cards__content-name">
+                            Trip
+                        </a>
+                        <div class="section-media-cards__statistics">
+                            <a href="#" class="section-media-cards__comments">
+                                7
+                            </a>
+                            <a href="#" class="section-media-cards__likes">
+                                15
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-media-cards__info-wrap">
+                    <div class="section-media-cards__text-wrap">
+                        <a href="#" class="section-media-cards__title">
+                            Why It’s Amazing To Date
+                            People Who Love Traveling
+                        </a>
+                        <div class="section-media-cards__description">
+                            Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris.
+                        </div>
+                    </div>
+                    <hr color="#e0e0e0" style="margin: 0">
+                    <div class="section-media-cards__user-wrap">
+                        <div class="section-media-cards__user">
+                            <div class="section-media-cards__user-photo-wrap">
+                                <a href="#"><img class="section-media-cards__photo" src="img/content/user_photo_ben.png" alt="user_photo_ben"></a>
+                            </div>
+                            <a href="#" class="section-media-cards__name">Benjamin Miller</a><br>
+                            <span class="section-media-cards__date">April 28, 2016</span>
+                        </div>
+                        <a class="section-media-cards__user-more" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-media-cards">
+                <div class="section-media-cards__content-wrap">
+                    <div class="section-media-cards__wrap-content">
+                        <img class="section-media-cards__content-photo" src="img/content/userful_tips.png">
+                    </div>
+                    <div class="section-media-cards__value">
+                        <a href="#" class="section-media-cards__content-name">
+                            Lifestyle
+                        </a>
+                        <div class="section-media-cards__statistics">
+                            <a href="#" class="section-media-cards__comments">
+                                7
+                            </a>
+                            <a href="#" class="section-media-cards__likes">
+                                15
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-media-cards__slider-arrow-wrap">
+                        <div class="section-media-cards__arrow-left">
+
+                        </div>
+                        <div class="section-media-cards__arrow-right">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section-media-cards__info-wrap">
+                    <div class="section-media-cards__text-wrap">
+                        <a href="#" class="section-media-cards__title">
+                            5 Useful Tips for Novice
+                            Painters
+                        </a>
+                        <div class="section-media-cards__description">
+                            Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris.
+                        </div>
+                    </div>
+                    <hr color="#e0e0e0" style="margin: 0">
+                    <div class="section-media-cards__user-wrap">
+                        <div class="section-media-cards__user">
+                            <div class="section-media-cards__user-photo-wrap">
+                                <a href="#"><img class="section-media-cards__photo" src="img/content/user_photo_henry.png" alt="user_photo_henry"></a>
+                            </div>
+                            <a href="#" class="section-media-cards__name">Henry Little</a><br>
+                            <span class="section-media-cards__date">April 28, 2016</span>
+                        </div>
+                        <a class="section-media-cards__user-more" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-media-big-cards--wrap">
+            <div class="section-media-big-cards">
+                <div class="section-media-big-cards__content-wrap">
+
+                    <img class="section-media-big-cards__content-photo" src="img/content/fantastic_ways.png">
+
+                    <div class="section-media-big-cards__value">
+                        <a href="#" class="section-media-big-cards__content-name">
+                            Trip
+                        </a>
+                        <div class="section-media-big-cards__statistics">
+                            <a href="#" class="section-media-big-cards__comments">
+                                7
+                            </a>
+                            <a href="#" class="section-media-big-cards__likes">
+                                15
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-media-big-cards__info-wrap">
+                    <div class="section-media-big-cards__text-wrap">
+                        <a href="#" class="section-media-big-cards__title">
+                            11 Fantastic Ways Passionate
+                        </a>
+                        <div class="section-media-big-cards__description">
+                            Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris gravida, ipsu viverra urna at, dictume nunc fringilla quam.
+                        </div>
+                    </div>
+                    <hr color="#e0e0e0" style="margin: 0">
+                    <div class="section-media-big-cards__user-wrap">
+                        <div class="section-media-big-cards__user">
+                            <div class="section-media-big-cards__user-photo-wrap">
+                                <a href="#"><img class="section-media-big-cards__photo" src="img/content/user_photo_james.png" alt="user_photo_james"></a>
+                            </div>
+                            <a href="#" class="section-media-big-cards__name">James Leman</a><br>
+                            <span class="section-media-big-cards__date">April 28, 2016</span>
+                        </div>
+                        <a class="section-media-big-cards__user-more" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-media-big-cards">
+                <div class="section-media-big-cards__content-wrap">
+                    <div class="section-media-big-cards__wrap-content">
+                        <img class="section-media-big-cards__content-photo" src="img/content/art_makes.png">
+                    </div>
+                    <div class="section-media-big-cards__value">
+                        <a href="#" class="section-media-big-cards__content-name">
+                            Trip
+                        </a>
+                        <div class="section-media-big-cards__statistics">
+                            <a href="#" class="section-media-big-cards__comments">
+                                7
+                            </a>
+                            <a href="#" class="section-media-big-cards__likes">
+                                15
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-media-big-cards__info-wrap">
+                    <div class="section-media-big-cards__text-wrap">
+                        <a href="#" class="section-media-big-cards__title">
+                            Art Makes You Mentally Healthy
+                        </a>
+                        <div class="section-media-big-cards__description">
+                            Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris gravida, ipsu viverra urna at, dictume nunc fringilla quam.
+                        </div>
+                    </div>
+                    <hr color="#e0e0e0" style="margin: 0">
+                    <div class="section-media-big-cards__user-wrap">
+                        <div class="section-media-big-cards__user">
+                            <div class="section-media-big-cards__user-photo-wrap">
+                                <a href="#"><img class="section-media-big-cards__photo" src="img/content/user_photo_ben.png" alt="user_photo_ben"></a>
+                            </div>
+                            <a href="#" class="section-media-big-cards__name">Benjamin Miller</a><br>
+                            <span class="section-media-big-cards__date">April 28, 2016</span>
+                        </div>
+                        <a class="section-media-big-cards__user-more" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-article__wrap">
+            <a href="#" class="more-article">
+                <div class="more-article__text"></div>
+                <div class="more-article__arrow-right"></div>
+            </a>
+        </div>
+    </div>
+    <div class="container--sidebar-wrap">
+        <div class="sidebar-wrap clearfix">
+            <div class="sidebar">
+                <div class="search-wrap">
+                    <input type="text" class="sidebar__search" placeholder="Search">
+                </div>
+                <div class="sidebar__categories">
+                    <div class="sidebar__title-categories">
+                        Categories
+                    </div>
+                    <ul class="sidebar__list-categories">
+                        <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Photography</span><span class="sidebar__number-articles">195</span></a></li>
+                        <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Illustration</span><span class="sidebar__number-articles">15</span></a></li>
+                        <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Graphic Design</span><span class="sidebar__number-articles">36</span></a></li>
+                        <li><a class="sidebar__list-element" href="#"><span class="sidebar__name-category">Web design</span><span class="sidebar__number-articles">220</span></a></li>
+                        <li><a class="sidebar__list-element last-child" href="#"><span class="sidebar__name-category">Videography</span><span class="sidebar__number-articles">17</span></a></li>
+                    </ul>
+                </div>
+                <div class="sidebar__subscribe">
+                    <div class="sidebar__title-subscribe">
+                        Subscribe
+                    </div>
+                    <form method="POST" action="handle.php" name="messageForm" id="form" onsubmit="return valid(this)">
+                        <label class="sidebar__label-name" for='name'>Name</label><br>
+                        <input class="sidebar__input-name" type="text" placeholder="Igor Ten" required name ="name" id="name"> <span id="stat_name" style="color:red; font-weight:bold"></span><br>
+                        <label class="sidebar__label-email" for='email'>Email</label><br>
+                        <input class="sidebar__input-email" type="email" placeholder="email@adress.com" required name="email" id="email"> <span id="stat_email" style="color:red; font-weight:bold"></span><br>
+                        <input class="sidebar__submit-form" type="submit" name="submitForm" value="subscribe">
+                    </form>
+                    <div class="sidebar__or">
+                        or
+                    </div>
+                    <div class="sidebar__social-icon">
+                        <a href="#" class="sidebar__facebook-icon">
+
+                        </a>
+                        <a href="#" class="sidebar__twitter-icon">
+
+                        </a>
+                        <a href="#" class="sidebar__vk-icon">
+
+                        </a>
+                        <a href="#" class="sidebar__pinterest-icon">
+
+                        </a>
+                        <a href="#" class="sidebar__tumblr-icon">
+
+                        </a>
+                        <a href="#" class="sidebar__dribbble-icon">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar__widget">
+                    <div class="sidebar__title-widget">
+                        Tab post widget
+                    </div>
+                    <div class="sidebar__switch-posts">
+                        <button class="sidebar__recent-post" autofocus>Recent post</button>
+                        <button class="sidebar__popular-post">Popular post</button>
+                    </div>
+                    <div class="sidebar__tab-wrap">
+                        <div class="sidebar__photo-wrap">
+                            <a href="#"><img class="sidebar__photo" src="img/sidebar/man_sidebar.png"></a>
+                        </div>
+                        <div class="sidebar__info-tab">
+                            <span class="sidebar__date-tab">April 28, 2016</span>
+                            <a href="#" class="sidebar__comment-tab">17</a><br>
+                            <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
+                        </div>
+                    </div>
+                    <div class="sidebar__tab-wrap">
+                        <div class="sidebar__photo-wrap">
+                            <a href="#"><img class="sidebar__photo" src="img/sidebar/wooman_sidebar.png"></a>
+                        </div>
+                        <div class="sidebar__info-tab">
+                            <span class="sidebar__date-tab">April 28, 2016</span>
+                            <a href="#" class="sidebar__comment-tab">17</a><br>
+                            <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
+                        </div>
+                    </div>
+                    <div class="sidebar__tab-wrap">
+                        <div class="sidebar__photo-wrap">
+                            <a href="#"><img class="sidebar__photo" src="img/sidebar/wooman-see_sidebar.png"></a>
+                        </div>
+                        <div class="sidebar__info-tab">
+                            <span class="sidebar__date-tab">April 28, 2016</span>
+                            <a href="#" class="sidebar__comment-tab">17</a><br>
+                            <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
+                        </div>
+                    </div>
+                    <div class="sidebar__tab-wrap">
+                        <div class="sidebar__photo-wrap">
+                            <a href="#"><img class="sidebar__photo" src="img/sidebar/wooman-fire_sidebar.png"></a>
+                        </div>
+                        <div class="sidebar__info-tab">
+                            <span class="sidebar__date-tab">April 28, 2016</span>
+                            <a href="#" class="sidebar__comment-tab">17</a><br>
+                            <a href="#" class="sidebar__description-tab">Duis commodo elit sed nisi molestie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar__tags">
+                    <div href="#" class="sidebar__title-tags">
+                        Tags
+                    </div>
+                    <a href="#" class="sidebar__tags-item">
+                        Photography
+                    </a>
+                    <a href="#" class="sidebar__tags-item">
+                        Webdesign
+                    </a>
+                    <a href="#" class="sidebar__tags-item">
+                        Youtube
+                    </a>
+                    <a href="#" class="sidebar__tags-item">
+                        Envato
+                    </a>
+                    <a href="#" class="sidebar__tags-item">
+                        Art
+                    </a>
+                    <a href="#" class="sidebar__tags-item">
+                        Themefotest
+                    </a>
+                    <a href="#" class="sidebar__tags-item">
+                        Illustration
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+
 <!-- /.content -->
 
-<footer class="footer"></footer>
-<!-- /.footer -->
+</div>
+<footer class="footer">
+    <div class="footer-photos">
+        <div class="footer-photos__item"><img src="img/footer/photos/1.jpg" alt="1"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/2.jpg" alt="2"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/3.jpg" alt="3"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/4.jpg" alt="4"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/5.jpg" alt="5"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/6.jpg" alt="6"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/7.jpg" alt="7"></div>
+        <div class="footer-photos__item"><img src="img/footer/photos/8.jpg" alt="8"></div>
+    </div>
+    <div class="footer-subscribe">
+        <div class="grid">
+            <form action="#">
+                <label for="email" class="footer-subscribe__label">Subscribe to our newsletter</label>
+                <input type="email" id="email" class="footer-subscribe__email" placeholder="Email Address">
+                <input type="submit" value="Subscribe" class="footer-subscribe__button">
+            </form>
+        </div>
+    </div>
+    <div class="footer-widgets">
+        <div class="grid">
+            <div class="footer-widgets__pages">
+                <div class="footer-widgets__title">Pages Widget</div>
+                <div class="footer-widgets__pages-box">
+                    <a href="#" class="footer-widgets__pages-title">Home</a>
+                    <ul class="footer-widgets__pages-content">
+                        <li><a class="footer-widgets__pages-link" href="#">Service</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">FAQ</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widgets__pages-box">
+                    <a href="#" class="footer-widgets__pages-title">Pages</a>
+                    <ul class="footer-widgets__pages-content">
+                        <li><a class="footer-widgets__pages-link" href="#">Service</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">FAQ</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widgets__pages-box">
+                    <a href="#" class="footer-widgets__pages-title">Portfolio</a>
+                    <ul class="footer-widgets__pages-content">
+                        <li><a class="footer-widgets__pages-link" href="#">Service</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">FAQ</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widgets__pages-box">
+                    <a href="#" class="footer-widgets__pages-title">Blog</a>
+                    <ul class="footer-widgets__pages-content">
+                        <li><a class="footer-widgets__pages-link" href="#">Service</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">FAQ</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widgets__pages-box">
+                    <a href="#" class="footer-widgets__pages-title">Shop</a>
+                    <ul class="footer-widgets__pages-content">
+                        <li><a class="footer-widgets__pages-link" href="#">Service</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">FAQ</a></li>
+                        <li><a class="footer-widgets__pages-link" href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.footer-widgets__pages -->
+            <div class="footer-widgets__wrapper">
+                <div class="footer-widgets__twitter">
+                    <div class="footer-widgets__title">Twitter widget</div>
+                    <div class="footer-widgets__twitter-item">
+                        <div class="footer-widgets__twitter-author">@PASCO, Duis commodo elit sed nisi molestie</div>
+                        <div class="footer-widgets__twitter-wrapper">
+                            <div class="footer-widgets__twitter-time">2 hours ago</div>
+                            <div class="footer-widgets__twitter-box">
+                                <a href="#">Reply</a>
+                                <a href="#">Retweet</a>
+                                <a href="#">Favourite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-widgets__twitter-item">
+                        <div class="footer-widgets__twitter-author">@PASCO, Duis commodo elit sed nisi molestie</div>
+                        <div class="footer-widgets__twitter-wrapper">
+                            <div class="footer-widgets__twitter-time">2 hours ago</div>
+                            <div class="footer-widgets__twitter-box">
+                                <a href="#">Reply</a>
+                                <a href="#">Retweet</a>
+                                <a href="#">Favourite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-widgets__twitter-item">
+                        <div class="footer-widgets__twitter-author">@PASCO, Duis commodo elit sed nisi molestie</div>
+                        <div class="footer-widgets__twitter-wrapper">
+                            <div class="footer-widgets__twitter-time">2 hours ago</div>
+                            <div class="footer-widgets__twitter-box">
+                                <a href="#">Reply</a>
+                                <a href="#">Retweet</a>
+                                <a href="#">Favourite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widgets__social">
+                    <div class="footer-widgets__title">Social widget</div>
+                    <div class="footer-widgets__social-box">
+                        <a href="#" class="footer-widgets__social-facebook"></a>
+                        <a href="#" class="footer-widgets__social-twitter"></a>
+                        <a href="#" class="footer-widgets__social-vk"></a>
+                        <a href="#" class="footer-widgets__social-pin"></a>
+                        <a href="#" class="footer-widgets__social-tumbler"></a>
+                        <a href="#" class="footer-widgets__social-dribble"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.footer-widgets__box -->
+            <div class="footer-widgets__flickr">
+                <div class="footer-widgets__title">Flickr widget</div>
+                <div class="footer-widgets__flickr-wrapper">
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/1.jpg" alt="picture"></a></div>
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/2.jpg" alt="picture"></a></div>
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/3.jpg" alt="picture"></a></div>
+                </div>
+                <div class="footer-widgets__flickr-wrapper">
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/4.jpg" alt="picture"></a></div>
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/5.jpg" alt="picture"></a></div>
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/6.jpg" alt="picture"></a></div>
+                </div>
+                <div class="footer-widgets__flickr-wrapper">
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/7.jpg" alt="picture"></a></div>
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/8.jpg" alt="picture"></a></div>
+                    <div class="footer-widgets__flickr-item"><a href="#"><img src="img/footer/widgets/pictures/9.jpg" alt="picture"></a></div>
+                </div>
+            </div>
+            <!-- /.footer-widgets__flickr -->
+            <div class="footer-widgets__letter">
+                <div class="footer-widgets__title">News letter</div>
+                <form action="#">
+                    <input class="footer-widgets__letter-name" type="Text" placeholder="Name">
+                    <input class="footer-widgets__letter-address"  type="email" placeholder="Email Address">
+                    <textarea class="footer-widgets__letter-text" rows="10" placeholder="Message"    ></textarea>
+                    <input class="footer-widgets__letter-btn"  type="submit" value="Subscribe">
+                </form>
+            </div>
+            <!-- /.footer-widgets__letter -->
+        </div>
+        <div class="footer-bottom">
+            <div class="grid">
+                <div class="footer-bottom-wrapper">
+                    <nav>
+                        <ul class="header-menu__nav">
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Home</a></li>
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Portfolio</a></li>
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Blog</a></li>
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Pages</a></li>
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Shop</a></li>
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Components</a></li>
+                            <li><a class="header-menu__link footer-bottom__link" href="#">Features</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-bottom__form">
+                        <form  action="#">
+                            <input class="footer-bottom__search" type="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="footer-bottom__language language-box">
+                        <select name="language">
+                            <option value="1">ENG</option>
+                            <option value="1">RUS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.footer-bottom -->
+    </div>
+</footer>
 
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="lib/slick/slick.js"></script>
 <script src="js/main.js"></script>
 </body>
-
-
 </html>
