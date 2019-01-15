@@ -1244,15 +1244,17 @@ template {
 }
 
 .header-menu__nav {
-    display: flex;
     margin: 0;
     padding: 0;
 }
-.header-menu__nav li {
+.navigation-box {
+    display: flex;
+}
+.navigation-box li {
     list-style-type: none;
 
 }
-.header-menu__link {
+.navigation-box__link {
     display: flex;
     position: relative;
     box-sizing: border-box;
@@ -1266,7 +1268,7 @@ template {
     font-weight: 700;
     transition: border-bottom-color 0.5s ease-in;
 }
-.header-menu__link::after {
+.navigation-box__link::after {
     content: '';
     position: absolute;
     width: 10px;
@@ -1280,7 +1282,7 @@ template {
     margin-right: 10px;
 }
 
-.header-menu__link:hover {
+.navigation-box__link:hover {
     border-bottom: 4px solid #ff4081;
 }
 .header-menu__box {
@@ -1295,6 +1297,12 @@ template {
     padding: 20px 25px;
     border-right: 1px solid #fff;
 }
+.header-menu__search:hover,
+.header-menu__like:hover,
+.header-menu__cart:hover {
+    opacity: 0.6;
+}
+
 .header-menu__search::after {
     content: '';
     position: absolute;
@@ -1312,7 +1320,7 @@ template {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url("../img/header/header-menu/like.svg") no-repeat;
+    background: url("../img/header/header-menu/heart.svg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     top: 50%;
@@ -1474,6 +1482,9 @@ template {
     letter-spacing: 2px;
     margin-bottom: 3px;
 }
+.header-content__name:hover {
+    opacity: 0.6;
+}
 .header-content__date {
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
@@ -1497,6 +1508,9 @@ template {
     line-height: 27px;
     margin-right: 10px;
 }
+.header-content__comments:hover {
+    opacity: 0.6;
+}
 .header-content__likes {
     position: relative;
     padding: 10px 30px 12px 30px;
@@ -1507,7 +1521,9 @@ template {
     font-weight: 400;
     line-height: 27px;
 }
-
+.header-content__likes:hover {
+    opacity: 0.6;
+}
 .header-content__comments::before {
     content: '';
     position: absolute;
@@ -1598,10 +1614,15 @@ template {
     box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
     background-color: #303f9f;
 }
+.footer-subscribe__button:hover {
+    background-color: #041373;
+}
 
 /*оформляем блок с виджетами*/
 .footer-widgets {
+    min-height: 454px;
     padding-top: 50px;
+    padding-bottom: 47px;
     background-color: #212121;
     color: #fff;
 
@@ -1626,6 +1647,7 @@ template {
     border: 0.5px solid #fff;
     border-radius: 3px;
     margin-bottom: 5px;
+    opacity: 0.7;
 }
 .footer-widgets__pages-title {
     position: relative;
@@ -1702,6 +1724,7 @@ template {
     padding-bottom: 10px;
     border-bottom: 0.1px solid #fff;
     margin-bottom: 10px;
+    opacity: 0.7;
 }
 .footer-widgets__twitter-author {
     position: relative;
@@ -1711,7 +1734,6 @@ template {
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
-    opacity: 0.7;
     margin-bottom: 5px;
 }
 .footer-widgets__twitter-author::before {
@@ -1752,7 +1774,7 @@ template {
     right: 0;
     transform: translateX(130%);
 }
-.footer-widgets__twitter-box a {
+.footer-widgets__twitter-link {
     opacity: 0.7;
     margin-right: 5px;
     color: #ffffff;
@@ -1760,6 +1782,10 @@ template {
     font-size: 12px;
     font-weight: 600;
     line-height: 21px;
+}
+.footer-widgets__twitter-link:hover {
+    opacity: 1;
+    color: #ffffff;
 }
 
 .footer-widgets__social-box {
@@ -1772,6 +1798,7 @@ template {
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 .footer-widgets__social-vk {
     padding: 18px;
     background: url("../img/footer/widgets/social/vk.svg") center no-repeat;
@@ -1803,7 +1830,14 @@ template {
     -webkit-background-size: cover;
     background-size: cover;
 }
-
+.footer-widgets__social-facebook:hover,
+.footer-widgets__social-vk:hover,
+.footer-widgets__social-twitter:hover,
+.footer-widgets__social-pin:hover,
+.footer-widgets__social-tumbler:hover,
+.footer-widgets__social-dribble:hover {
+    opacity: 0.6;
+}
 
 .footer-widgets__flickr {
     margin-left: 30px;
@@ -1817,6 +1851,9 @@ template {
    display: flex;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+.footer-widgets__flickr-item:hover {
+    opacity: 0.6;
 }
 
 .footer-widgets__letter {
@@ -1836,6 +1873,7 @@ template {
     outline: none;
     border: 1px solid #fff;
     border-radius: 5px;
+    opacity: 0.7;
 }
 .footer-widgets__letter-address {
     margin-top: 10px;
@@ -1850,6 +1888,7 @@ template {
     outline: none;
     border: 1px solid #fff;
     border-radius: 5px;
+    opacity: 0.7;
 }
 .footer-widgets__letter-text {
     margin-top: 10px;
@@ -1865,6 +1904,7 @@ template {
     border: 1px solid #fff;
     border-radius: 5px;
     resize: none;
+    opacity: 0.7;
 }
 .footer-widgets__letter-btn {
     width: 100%;
@@ -1882,8 +1922,10 @@ template {
     text-transform: uppercase;
     cursor: pointer;
 }
+.footer-widgets__letter-btn:hover {
+    opacity: 0.6;
+}
 .footer-bottom {
-    margin-top: 77px;
     background-color: #303030;
 }
 .footer-bottom-wrapper {
@@ -1894,6 +1936,10 @@ template {
 }
 .footer-bottom__language select {
     background-color: transparent;
+}
+.:hover {
+    border:none;
+    opacity: 0.6;
 }
 .footer-bottom__search {
     width: 220px;
@@ -1923,8 +1969,11 @@ template {
     margin-right: 14px;
     opacity: 0.5;
 }
-.footer-bottom__link {
+.navigation-box--size--small {
     font-size: 12px;
+}
+.navigation-box--size--small:after {
+    display: none;
 }
 .footer-bottom__language {
     position: relative;
@@ -2254,5 +2303,22 @@ template {
 }
 .sidebar__tags-item:hover{
     background-color: #cbc9c9;
->>>>>>> dev_ivan_sidebar
 }
+
+/** Прибиваем футер**/
+html,
+body {
+    height: 100%;
+}
+.sheet-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sheet-content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
+
