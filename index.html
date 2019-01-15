@@ -675,8 +675,8 @@
     <div class="footer-subscribe">
         <div class="grid">
             <form action="#">
-                <label for="email" class="footer-subscribe__label">Subscribe to our newsletter</label>
-                <input type="email" id="email" class="footer-subscribe__email" placeholder="Email Address">
+                <label for="subscribe-email" class="footer-subscribe__label">Subscribe to our newsletter</label>
+                <input type="email" id="subscribe-email" class="footer-subscribe__email" placeholder="Email Address">
                 <input type="submit" value="Subscribe" class="footer-subscribe__button">
             </form>
         </div>
@@ -798,10 +798,10 @@
             <!-- /.footer-widgets__flickr -->
             <div class="footer-widgets__letter">
                 <div class="footer-widgets__title">News letter</div>
-                <form action="#" method="POST" id="letterForm" name="letterForm" onsubmit="return footerValid(this)">
-                    <input  id="letterName" name="letterName" class="footer-widgets__letter-name" type="Text" placeholder="Name">
-                    <input  id="letterEmail" name="letterEmail" class="footer-widgets__letter-address"  type="email" placeholder="Email Address">
-                    <textarea id="letterText" name="letterText" class="footer-widgets__letter-text" rows="10" placeholder="Message"></textarea >
+                <form action="#" method="POST" id="letterForm" name="letterForm">
+                    <input   required id="letterName" name="letterName" class="footer-widgets__letter-name" type="Text" placeholder="Name">
+                    <input   required id="letterEmail" name="letterEmail" class="footer-widgets__letter-address"  type="email" placeholder="Email Address">
+                    <textarea  required id="letterText" name="letterText" class="footer-widgets__letter-text" rows="10" placeholder="Message"></textarea >
                     <input type="submit" value="subscribe" class="footer-widgets__letter-btn">
                 </form>
             </div>
